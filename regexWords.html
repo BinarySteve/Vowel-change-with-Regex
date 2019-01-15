@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<meta charsedt="utf-8">
+<title>Vowel Replacement</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+<!--Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Exo+2|Merriweather|Playfair+Display" rel="stylesheet">
+
+<!--CSS Stylesheets-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+<link rel="stylesheet" href="regexWords.css" />
+
+<body>
+
+
+	<div class="container-fluid text-center mt-5">
+	<div class="card shadow bg-light rounded" id="main">
+		<div class="card-header bg-dark shadow text-center text-white" id="header">Vowel Replacement using <span class="regex">Regex</span></div>
+		<div class="card-body">
+		<h6 class="card-subtitle mb-2 text-muted" id="wordLabel">Your word(s) with vowels:</h6>
+		<div class="input-group w-50 mb-3 ml-auto mr-auto">
+		<input type="text" class="form-control" id="yourWord" aria-label="your-word" aria-describedby="your-word">
+		</div>
+		 <h6 class="card-subtitle mb-2 text-muted" id="replaceLabel">Replace vowels with:</h6>
+		<div class="input-group w-50 mb-3 ml-auto mr-auto">
+		<input type="text" class="form-control" id="replacer" aria-label="replace-with" aria-describedby="replace-with">
+	</div>
+		<button type="button" class="btn btn-dark w-50" id="button">Convert</button>
+		</div>
+			
+	</div>
+	<div class="card shadow mb-2 rounded bg-light">
+	<div class="card-header bg-dark shadow text-center text-white" id="header">Converted Output</div>
+	<div class="card-body">
+		<h6 class="card-subtitle mb-2 text-muted" id="replaceLabel">Your original word(s):</h6>
+		<div class="" id="outputWord"></div>
+		<br />
+		<h6 class="card-subtitle mb-2 text-muted" id="replaceLabel">We converted it to:</h6>
+		<div class="" id="outputReplace"></div>
+		</div>
+		</div>
+
+	
+	
+	<!--Bootstrap Scripts-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <!--jQuery Script-->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="></script>
+	<script src="regexWords.js"></script>
+</body>
+</html>
